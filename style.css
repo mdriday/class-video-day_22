@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.div1{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.click{
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: seagreen;
+    color: #f9f9f9;
+    padding: 15px 55px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+    transition: .6s;
+    z-index: -1;
+}
+.click:hover::before{
+    width: 100%;
+   
+    
+}
+
+.div2{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.click2{
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(12, 248, 115);
+    color: #f9f9f9;
+    padding: 15px 55px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 230, 0);
+    border-radius: 10px;
+    transition: .6s;
+    z-index: -1;
+}
+.click2:hover::before{
+    width: 100%;   
+}
+
+
+.div3{
+    text-align: center;
+    margin-top: 50px;
+}
+.click3 {
+	font-size: 40px;
+	text-decoration: navajowhite;
+	color: #fff;
+	background: blue;
+	padding: 15px 30px;
+	border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.click3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: salmon;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .6s;
+}
+.click3:hover::before{
+    height: 100%;
+}
+
+
+.div4{
+    margin-top: 50px;
+    text-align: center;
+}
+.click4 {
+	text-decoration: none;
+	font-size: 45px;
+	color: #fff;
+	background: blueviolet;
+	display: inline-block;
+	padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.click4::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: seagreen;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .6s;
+
+}
+.click4:hover::before{
+    height: 100%;
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+h1::before{
+    content: "#";
+}
+h1::after{
+    content: "#";
+}
+
+ul{
+    list-style: none;
+    margin-left: 50px;
+}
+ul .list{
+    font-size: 30px;
+    line-height: 40px;
+    
+}.list::before{
+    content: "\f050";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+ul #list{
+    font-size: 30px;
+    color: saddlebrown;
+}
+ul #list::before{
+    content: "\f4be";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    margin-right: 20px;
+}
+.list-2{
+    font-size: 30px;
+    color: red;
+}
+.list-2::before{
+    content: "\f101";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 700;
+}
